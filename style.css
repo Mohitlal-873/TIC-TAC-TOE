@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+}
+body{
+    background-image: url("image.img/wp8984736-tic-tac-toe-wallpapers.jpg");
+    text-align: center;
+     background-size: 1231px 610px;
+     min-height: 100vh;
+}
+.container{   
+    height:70vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{   
+    height: 60vmin;
+    width: 60vmin;
+    display :flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width : 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow:1rem 0 1rem rgba(0,0,0,0.3) ;
+    color:#3e382d ;
+    justify-content: center;
+    align-items: center;
+    font-size: 12vmin;
+    background-color: rgba(231, 225, 225, 0.7);
+    backdrop-filter: blur(0.5px);
+    text-shadow:1rem 0 1rem ;    
+}
+.box:hover{
+    background-color:rgba(144, 238, 144, 0.667);
+}
+#rst{
+
+    padding: 1em 2em;
+    background-color: #161a20;
+    border: none;
+    color: white;
+    border-radius: 1000px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#rst::before{
+    content: "";
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background: linear-gradient(to bottom right,blue,purple);
+    z-index: -1;
+    
+   
+}
+#rst:hover{
+    z-index: 0;
+    box-shadow: 40px 0 100px rgba(0, 0, 255, 0.769),-40px 0 100px rgba(128, 0, 128, 0.783);
+    }
+#new{
+    font-size: 18px;
+    letter-spacing:2px; ;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border:3px solid black;
+}
+#new:hover{
+    background-color: aqua;
+    border: none;
+    box-shadow: 40px 0 100px rgba(0, 255, 255, 0.801);
+}
+#msg
+{
+    color:black;
+    font-size: 8vmin;
+    font-weight: 800;
+}
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide{
+    display: none;
+}
+
+
